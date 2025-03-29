@@ -97,3 +97,25 @@ This is a simple calculator microservice built using **Node.js** and **Express**
 - Use this command to view logs in real-time:
   ```bash
   Get-Content -Path "logs\combined.log" -Wait
+
+Challenges Faced
+Handling Invalid Input:
+
+Solution: I used isNaN() to validate inputs and ensured that only valid numbers are processed.
+
+Division by Zero:
+
+Solution: I added specific error handling for division by zero to return an appropriate message.
+
+Logging Requests and Errors:
+
+Solution: I integrated Winston to log both successful operations and errors, making it easy to track issues.
+
+Conclusion
+The calculator microservice is a simple REST API built with Node.js and Express, with Winston logging integrated for real-time monitoring. The service handles basic arithmetic operations and provides robust error handling for invalid inputs and division by zero.
+
+
+
+---
+
+This is a concise **`README.md`** file that documents the steps you've taken to complete the task and how to use the calculator microservice. Let me know if you need any modifications or additional details!
